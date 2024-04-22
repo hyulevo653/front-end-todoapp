@@ -4,6 +4,7 @@ import "./globals.css";
 import { Providers } from "./components/providers";
 import Appbar from "./components/Appbar";
 import SignInPanel from "./components/signInPanel";
+import Login from "./components/Login";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,7 +25,9 @@ export default function RootLayout({
           <SignInPanel />
         </Appbar>
         {children}
-        </Providers></body>
+        </Providers>
+        <Login />
+       </body>
     </html>
   );
 }
